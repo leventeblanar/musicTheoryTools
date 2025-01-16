@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!--Main CSS File-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Music Theory learning site</title>
+</head>
+<body>
+
+    <!--Menu-->
+    <header>
+        <a href="index.html" class="logo">
+            <h2>Music Theory tools</h1>
+        </a>
+        <nav class="navigation">
+            <a href="#">Chords</a>
+            <a href="#">Scales</a>
+            <a href="#">Metronome</a>
+            <a href="#">Rhytm</a>
+            <button class="btnLogin">Login</button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="chordFinder">
+            <div id="chordFinderContent">
+                <h1 id="chordFinderHead" style="color: wheat">Chord finder</h1>
+                <div id="chordFinderFormContent">
+                    <select name="noteDropDown" id="noteDropDown" class="chordFinderDropDown">
+                        <option value="C">C</option>
+                        <option value="C#/Db">C#/Db</option>
+                        <option value="D">D</option>
+                        <option value="D#/Eb">D#/Eb</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="F#/Gb">F#/Gb</option>
+                        <option value="G">G</option>
+                        <option value="G#/Ab">G#/Ab</option>
+                        <option value="A">A</option>
+                        <option value="A#/Bb">A#/Bb</option>
+                        <option value="B">B</option>
+                    </select>
+                    <select name="chordDropDown" id="chordDropDown" class="chordFinderDropDown">
+                        <option value="Major">Major</option>
+                        <option value="Minor">Minor</option>
+                        <option value="Diminished">Diminished</option>
+                        <option value="Augmented">Augmented</option>
+                    </select>
+                <button type="Submit" id="findNotes" onclick="findNotes()">Find notes</button>
+                </div>
+                <div id="resultText">A</div><br>
+                <div id="noteResults">B</div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
